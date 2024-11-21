@@ -1,8 +1,8 @@
-# A Simple Game Loop Written in C & SDL.
+To see how it works:
+    Compile with Makefile
+    Run with the executable ./game and an argument such as:
+        {{0+1}+{1*{0+1}}}
+Example would be:
+./game {{0+1}+{1*{0+1}}}
 
-This is an incredibly naive SDL game loop that contains a setup, input, update, and render function.
-
-This code was used as a companion to [this Youtube video](https://youtu.be/XfZ6WrV5Z7Y).
-
-For more information, visit:
-[https://pikuma.com](https://pikuma.com)
+There are a lot of print statements that I havent fixed yet. 

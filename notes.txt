@@ -1,0 +1,256 @@
+I have moved this from another repo. The goal now is to do different shit but it will be fun. 
+The first step is to have a wire move around, as if it is sending information. 
+Then I will have some other shit be around (smiley)!
+
+I just went through the worst war with the OS I think I have by yet. 
+I copied so mich shit around. It was crazy. 
+I deleted stuff. 
+I learned commands. 
+
+rmdir and rm exist. 
+If im going to use rm, I will often have to use -r. 
+I just looked at like a ton of shit. 
+Now I know lots about how the compiler actually works deep down. 
+
+
+There are lots of plans that I can have now that I have the base building blocks. 
+Originally, I wanted to work with wires. 
+For wires I need on and of. 
+
+At some point I will implement some form of stack and time system so that I can see things move with time. 
+I should also look at the code I already have to do this even better. 
+
+--------------------------------
+I AM BUILDING A PROCESSOR
+--------------------------------
+To do this, lots of stuff has to happen. 
+I need to have my recursive stuff happen. 
+This will happen in elec.
+I also probably need to know lots about making operations fast. 
+Then I need to find a time queue type of thing for when charge is going to happen. 
+
+I also need a system for other stuff. 
+Maybe I need higher resolution as well. 
+
+I may want a stack of some sort that I can append to. 
+
+
+Nowadays I am doing really hacky code. 
+I dont love the code I am writing but also fuck it. 
+I will think about it for later.
+
+FUTURE PLAN:
+make some of the stuff into structs. 
+I can have a struct with {char direction;char oppositedirection;int x;int y;}
+
+
+Right now I am thinking about how one should do some pragma stuff in the correct way. 
+My guess right now is that we need pragma once. 
+The reason we need pragma once: 
+We have a graph that splits up and this isn't great. 
+
+--PRAGMA--
+Pragma is for telling the compilers things.
+Not supported by all processors. 
+It is still something. 
+
+I dont know what I did the pragma once correctly but I hope so. 
+
+--random shit--
+I spent a few seconds not knowing how to make an array. 
+Now the compiler isnt happy with me because things arent const's.
+I dont know what that means. 
+
+I think I understand what the fuck is up with the implicit declaration mess. 
+I am allowed to define functions several times and things that arent defined yey can be used. 
+You should define things before you use them though. 
+
+
+I think the answer to my problem is that an array isnt a pointer necessarily. 
+I should just read through somewhere with all this info.
+Beofre that, I should read through what I know about it. 
+
+
+Hopefully I have now built a lot of shit that will work completely fine. 
+The goal now is to make a signal and put it where it should be. 
+
+Now I am sitting here debugging. 
+I made sure that originalorder=!originalorder.
+This is nice to have. 
+The thing I am trying ti fix now is that I dont know why nothing got added to the thing. 
+first I will clarify that it is for both of them. 
+
+Ok so I am pretty sure that it came in somehow. 
+
+My guess is that I had index++ instead of ++index. 
+This is a dumb mistake but happens when you try to write fast code and learn syntax 
+
+There are several things I dont know right now. 
+1: why isnt my yellow dot being shown on the wire?
+2: why aren't the stacks finding new things to interact with?
+
+My guess is that it doesnt draw. 
+
+
+Okay so I think it draws. 
+Maybe it just doesnt actually re-draw everything. 
+
+Ok so it did draw. Assuming that it drew, it makes sense that it didnt draw anything else. 
+I got confusing problems. For now I will just fix the other errors I am getting...
+
+
+PROGRESS ON MY CODE.
+There is another issue right now. 
+I dont know why it stops. 
+This is probably in signalto. 
+
+
+----------
+FUTURE NOTES
+----------
+Right now I am happy about how it looks. 
+However, I want to do a lot more with it. 
+The thing is that I dont want to have anything not represented in the image. 
+Maybe I need to have a little bit of memory lying somewhere?
+I think I may need a few items to get things to work as it should.
+I think I need a NAND. 
+Other thing is that I need a few other things. 
+I either need a set of tools for working on my things: 
+    which may require some graph theory. 
+Or I need to write a lot. 
+
+Graph theory argument: 
+I could describe the thing as a set of tools and then have a program that builds it for me. 
+One issue is that I cant have overlapping lines. 
+How this works I dont know. 
+
+One issue that I'm dealing with. 
+The way I have built things right now is like a set of signals flowing through wires. 
+This practically means that only the first one means anything. 
+
+One idea I have:
+I can build components. 
+I can build a NAND. 
+A NAND isnt going to let electricity flow through it. 
+I can make fancy code which uses nand to build other things. 
+A part of the goal now is to build nands.
+My plan for the nands. 
+
+A Component will quickly become something like an object. 
+I may have to do shit with it. 
+A component has to have a shape and a set of entries. 
+It could have to quadratic but fuck that. 
+That would restrict my shit too much.
+
+
+--BUILDING MEMORY--
+I dont know how to do it. 
+I need an if. 
+How I build an if: 
+
+How to build a memory. 
+I have a set of points that are the memory.
+Now I need wires that let the things flow or not flow. 
+
+I dont know how to do this. 
+Hard and not easy. 
+
+Maybe I need a system to flush. 
+
+ISSUES TO THINK ABOUT:
+Do I need to flush? 
+
+
+So apparently nothing is running right now. 
+For some reason I commented out the updateeverything...
+
+Things to do:
+Get a lot of the building logic out to a different file for simplicity. 
+    I dont need it in my file. 
+
+Move things out of file: 
+Lots of things need to get out of the main file but I still need to be able to use it correctly.
+
+There are two things I want to do at the same time and this is a silly way to work. 
+The first step should be to only get some of the stuff out. 
+It will only have function. 
+
+-----------------------
+    TODO
+-----------------------
+
+1: Get a lot of shit out. 
+    For this I need to understand h files. 
+
+2: Build a bunch of ports. 
+These ports will have:
+    type(AND, OR, NAND, NOR)
+    x,y position that is searchable
+    previous output state
+    Know that it has two outputs, one input and one that is nothing. 
+        Maybe the strategy is to only store the output...
+        When I scan over the other three, non-wire simply gets ignored. 
+    
+
+I just learned that we dont need a default in a switch. This is very nice to me and I like it. 
+
+Now I have another task to attend to:
+I learned that several files use char instead of enum and I want to fix it. 
+
+sig in wiresetup.h does it. 
+
+Also, I have random issues to attend to. 
+
+
+
+My guess right now is that it doesnt work because signalto() doesnt use isPort. This is why I built it.
+
+I can build isPort really quickly. 
+To do it, I can just put it in signalTo. 
+
+Right now I dont know the solution because I dont understand the issue properly. 
+
+signal_to wants access to a bunch of shit. 
+a bunch of shit wants access to signal_to. 
+
+
+----------------------------
+I have had lots of success with this and now I need to build a boolean expression parser
+---------------------------
+
+Bugs will probably show up. 
+That will be annoying. 
+For now I will just build the boolean parser from the base up. 
+
+I know I will get a string. 
+This is a char pointer and a length. 
+I dont know if it needs to be alloced at all. Probably not but who knows. 
+
+I dont exactly know how to do this anymore. 
+Right now my issue is to figure out how to do a struct that varies in size. 
+This I dont know how to do yet.
+It isnt super easy. 
+
+I want to find an expression. 
+The expression should either have a pointer or a value. 
+If it has a value then it doesnt have to have 
+As such, practically, the thing is either a pointer or not. 
+
+I genuinely dont know how to do this right now. 
+I am finding things from the bottom now from the top. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
